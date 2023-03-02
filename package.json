@@ -1,0 +1,42 @@
+{
+  "name": "sw-backend",
+  "version": "0.1.1",
+  "description": "A simple backend for supporting and additional services to SW office",
+  "repository": {
+    "type": "git",
+    "url": "https://vmgit.softwerke.local:sw-dcm/sw-backend.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node ./entrypoint.js",
+    "dev": "nodemon ./index.js",
+    "lint": "eslint --ext \".js\" --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "busboy": "^1.6.0",
+    "cookie-parser": "~1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.18.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "knex": "^2.2.0",
+    "ldapjs": "^2.3.3",
+    "moment": "^2.29.4",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
